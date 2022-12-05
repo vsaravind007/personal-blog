@@ -24,7 +24,7 @@ jobs:
           hugo-version: '0.107.0'
           extended: true
       - name: Build
-        run: hugo --minify
+        run: cd blog && hugo --minify
       - uses: shallwefootball/s3-upload-action@master
         name: Upload S3
         id: S3
