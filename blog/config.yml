@@ -2,13 +2,15 @@ baseURL: "https://blog.aravindvs.com/"
 title: Aravind VS
 paginate: 5
 theme: PaperMod
-
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 
 googleAnalytics: UA-123-45
+taxonomies:
+  category: categories
+  tag: tags
 
 minify:
   disableXML: true
@@ -18,13 +20,12 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Aravind VS
   description: "Personal blog of Aravind VS"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: ARAVIND VS
-  # author: ["Me", "You"] # multiple authors
+  keywords: [Blog, Portfolio, aravind,engineering]
+  author: Aravind
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: light # dark, light
-  disableThemeToggle: false
+  disableThemeToggle: true
 
   ShowReadingTime: true
   ShowShareButtons: true
@@ -52,15 +53,15 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
-    icon: /apple-touch-icon.png
+    text: "lotuscript"
+    icon: /icon.png
     iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
+    title: Aravind VS
+    subtitle: "Personal blog of Aravind VS"
     imageUrl: "<img location>"
     imageWidth: 120
     imageHeight: 120
@@ -74,20 +75,21 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: I'm Aravind, Senior Engineering Manager at [DIAGNAL](https://diagnal.com). I work mostly in the backend stack to solve problems at OTT scale. This is my personal blog where I write random unfiltered tech notes related to software, embedded systems and cars. Thanks for stopping by, I appreciate your time here! 
 
   socialIcons:
     - name: twitter
       url: "https://twitter.com/vsaravind007"
     - name: github
       url: "https://github.com/vsaravind007"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/vsaravind007/"
+    - name: instagram
+      url: "https://www.instagram.com/vsaravind_007/"
+
 
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
       SiteVerificationTag: "XYZabc"
 
   cover:
@@ -121,10 +123,9 @@ menu:
       url: /tags/
       weight: 20
     - identifier: example
-      name: example.org
-      url: https://example.org
+      name: aravindvs.com
+      url: http://aravindvs.com
       weight: 30
-# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
