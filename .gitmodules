@@ -1,10 +1,10 @@
-[submodule "blog/themes/paper"]
-	path = blog/themes/paper
+[submodule "themes/paper"]
+	path = themes/paper
 	url = https://github.com/nanxiaobei/hugo-paper
-[submodule "blog/themes/hugo-digital-garden-theme"]
-	path = blog/themes/hugo-digital-garden-theme
+[submodule "themes/hugo-digital-garden-theme"]
+	path = themes/hugo-digital-garden-theme
 	url = https://github.com/paulmartins/hugo-digital-garden-theme.git
-[submodule "blog/themes/PaperMod"]
-	path = blog/themes/PaperMod
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
 	url = https://github.com/adityatelange/hugo-PaperMod.git
 
