@@ -74,7 +74,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: I'm Aravind, Senior Engineering Manager at [DIAGNAL](https://diagnal.com). I work mostly in the backend stack to solve problems at OTT scale. This is my personal blog where I write random unfiltered tech notes related to software, embedded systems and cars. Thanks for stopping by, I appreciate your time here! 
+    Content: I'm Aravind, Senior Engineering Manager at [DIAGNAL](https://diagnal.com). I work mostly in the backend stack, solving problems at OTT scale. This is my personal blog where I write random unfiltered tech notes related to software, embedded systems and cars. Thanks for stopping by! 
 
   socialIcons:
     - name: twitter
@@ -96,10 +96,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  # editPost:
+  #   URL: "https://github.com/<path_to_repo>/content"
+  #   Text: "Suggest Changes" # edit text
+  #   appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -125,7 +125,7 @@ menu:
       name: aravindvs.com
       url: http://aravindvs.com
       weight: 30
-pygmentsUseClasses: true
+pygmentsUseClasses: false
 markup:
   highlight:
     noClasses: false
