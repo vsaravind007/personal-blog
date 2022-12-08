@@ -1,3 +1,4 @@
+baseURL: "https://blog.aravindvs.com/"
 title: Aravind VS
 paginate: 5
 theme: PaperMod
