@@ -74,8 +74,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: I'm Aravind, Senior Engineering Manager at [DIAGNAL](https://diagnal.com). I work mostly in the backend stack, solving problems at OTT scale. This is my personal blog where I write random unfiltered tech notes related to software, embedded systems and cars. Thanks for stopping by! 
+    Title: "Hi there! \U0001F44B"
+    Content: I'm Aravind, Senior Engineering Manager at [DIAGNAL](https://diagnal.com). I work mostly in the backend stack, solving problems at OTT scale. I'm a petrolhead and likes to push buttons on keyboards & cameras. This is my personal blog where I write random unfiltered tech notes related to software, embedded systems and cars.
 
   socialIcons:
     - name: twitter
