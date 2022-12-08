@@ -1,4 +1,3 @@
-baseURL: ""
 title: Aravind VS
 paginate: 5
 theme: PaperMod
@@ -22,7 +21,7 @@ params:
   description: "Personal blog of Aravind VS"
   keywords: [Blog, Portfolio, aravind,engineering]
   author: Aravind
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["http://aravindvs.com/me_og.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: light # dark, light
   disableThemeToggle: true
