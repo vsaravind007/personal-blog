@@ -30,7 +30,7 @@ To begin with, the logging system must be robust & well defined. Log levels must
 
 Log entries should provide maximum details to the reader/reviewer - They should be meaningful in terms of log level, details it provides and MUST be sequential with the execution flow. 
 
-Having sequential logs might not work for serverless systems or systems that handle very high traffic - For these kind of systems, rely on a session id or a token that will be common for session which should be part of logs to enable easier filtering & correlation, this unfortunately has a side effect of interfereing with edge caching, handling needs to be there in code/infra to manage this. Logging framework should be part of the application and *not an after thought!*
+Having sequential logs might not work for serverless systems or systems that handle very high traffic - For these kind of systems, rely on a session id or a token that will be common for session which should be part of logs to enable easier filtering & correlation, this unfortunately has a side effect of interfering with edge caching, handling needs to be there in code/infra to manage this. Logging framework should be part of the application and *not an after thought!*
 
 Identify critical and non-critical parts of the system - A payment system will be critical while a favourite API might not be as critical. Critical systems should have anticipatory logs enabled at all times with a sensible retention period - retention period should be based on the use-case and application domain. If your service/product is offering realtime consumable content or time critical service, keeping logs older than 2 weeks might not be logical.
 
