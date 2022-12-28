@@ -2,10 +2,10 @@
 title: "Anticipatory Log Collection"
 date: 2022-12-28T13:07:40+05:30
 draft: false
-summary: Implementing long running lambda functions in AWS
+summary: Anticipatory log collection can help in managing production issues proactively and optimise the application over time.
 cover:
     image: "/assets/images/anticipatory-log-collection/cover.jpeg"
-tags: ['backend', 'nodejs', 'aws', 'lambda','cloudwatch']
+tags: ['operations', 'techops', 'aws', 'logging','cloudwatch']
 categories:
 - software
 - aws
