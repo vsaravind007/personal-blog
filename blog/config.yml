@@ -22,7 +22,7 @@ params:
   description: "Personal blog of Aravind VS"
   keywords: [Blog, Portfolio, aravind,engineering]
   author: Aravind
-  images: ["http://aravindvs.com/me_og.jpg"]
+  images: ["https://blog.aravindvs.com/assets/images/cover.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: light # dark, light
   disableThemeToggle: true
@@ -62,7 +62,7 @@ params:
     enabled: false # needs to be explicitly set
     title: Aravind VS
     subtitle: "Personal blog of Aravind VS"
-    imageUrl: "<img location>"
+    imageUrl: "https://blog.aravindvs.com/assets/images/cover.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
