@@ -44,6 +44,8 @@ Wiring is pretty straight forward - AHT10 temperature humidity sensor is connect
 
 All of the above electronics were enclosed in a custom built 3D printed case. You can download the STL files to print here: https://www.thingiverse.com/thing:5868311. 
 
+![3D printed case](/assets/images/diy-motion-sensor-for-home-assistant/motion_sensor_case_fusion360.jpg)
+
 #### Software
 I've used PlatformIO with Arduino framework for the software part. The microcontroller is in deep sleep mode most of the time and is woken up by an external interrupt by the SR602 PIR sensor or by an internal RTC wakeup signal for sending the temperature & humidity values. Since this is a multi sensor with temperature & humidity sensors, the internal RTC is configured to wake the microcontroller every 10 minutes, once the microcontroller starts, the following stuff happens:
 
