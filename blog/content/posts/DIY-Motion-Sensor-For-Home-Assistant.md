@@ -42,7 +42,7 @@ Wiring is pretty straight forward - AHT10 temperature humidity sensor is connect
 
 ![Components](/assets/images/diy-motion-sensor-for-home-assistant/sensor-components.jpg)
 
-All of the above electronics were enclosed in a custom built 3D printed case. You can download the STL files to print here: https://www.thingiverse.com/thing:5868311. 
+All of the above electronics were enclosed in a custom built 3D printed case designed using Fusion 360. You can download the STL files to print here: https://www.thingiverse.com/thing:5868311. 
 
 ![3D printed case](/assets/images/diy-motion-sensor-for-home-assistant/motion_sensor_case_fusion360.jpg)
 
