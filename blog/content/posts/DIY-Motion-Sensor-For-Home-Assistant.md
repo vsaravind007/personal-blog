@@ -115,4 +115,5 @@ The sensor has been working flawlessly since the last few weeks. Must say that I
 
 Since there is no battery protection circuitry now, only time will tell how long the battery will
 last, the plan now is to recharge the battery once the sensor stops sending data. Have setup an automation to trigger an alert if the sensor go silent for 2hrs - since the temperature & humidity data is published every 10mins, its easy to detect that the sensor has died.
+
 Thanks for reading!
