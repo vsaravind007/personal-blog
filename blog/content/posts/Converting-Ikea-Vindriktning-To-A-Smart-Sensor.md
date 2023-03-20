@@ -17,7 +17,7 @@ Recent visit to Ikea made me buy a bunch of their cute little things, the Vindri
 
 ![Sensor](/assets/images/converting-ikea-aqi-sensor/ikea-Vindriktning.jpg)
 
-The PM2.5 to light conversion is done based on the following table, this is taken from their product manual:
+The PM2.5 reading to light conversion is done based on the following table, which is taken from their product manual:
 
 | PM2.5 Concentration(µg/m³) | LED Color      |
 |---------------------|----------------|
@@ -27,7 +27,7 @@ The PM2.5 to light conversion is done based on the following table, this is take
 
 The sensor is very cheap at around ₹1000(around $12) and the design is pretty good as well, it kind of blends in with the decor around.
 
-I had the sensor as-is for a day, I took it apart to see what makes it click the next day. The unit has a PM2.5 sensor with a fan that blows air directly through the sensor. There is a PCB with a micro controller controlling the operations. The sensor has a lot of free space inside it & a quick look around revealed that this sensor has been converted into a Smart Sensor by a number of people and Tasmota fully supports this. Converting the sensor as a smart sensor is pretty straight forward - just add an ESP8266 with Tasmota firmware & configure the pins, pretty straight forward. I've used the Wemos D1 Mini board for this, its an ESP8266 based development board thats small enough to fit inside the sensor housing.
+I had the sensor as-is for a day, I took it apart to see what makes it click the next day. The unit has a PM2.5 sensor with a fan that blows air directly through the sensor. There is a PCB with a micro controller controlling the operations. The sensor has a lot of free space inside it & a quick look around revealed that this sensor has been converted into a Smart Sensor by a number of people and Tasmota fully supports this. Converting the sensor as a smart sensor is pretty straight forward - just add an ESP8266 with Tasmota firmware & configure the pins, pretty easy. I've used the Wemos D1 Mini board for this, its an ESP8266 based development board thats small enough to fit inside the sensor housing.
 
 ### Hardware
 
@@ -59,7 +59,7 @@ The following Pin mapping is made with the sensor PCB, the Wemos D1 Mini & AHT10
 
 ![Sensor Soldering done](/assets/images/converting-ikea-aqi-sensor/ikea-Vindriktning-soldering-done.jpg)
 
-Once all connections were made, the AHT10 sensor is mounted on top directly in the airflow way with double sided tape as seen in the photo below:
+Once all connections were made, the AHT10 sensor was mounted on top directly in the airflow path with double sided tape as seen in the photo below:
 
 ![Sensor AHT10](/assets/images/converting-ikea-aqi-sensor/ikea-Vindriktning-aht10.jpg)
 
@@ -87,7 +87,7 @@ Click on connect & then install (Make sure to check `Erase Device`) and once ins
 
 ![Tasmota pin mapping](/assets/images/converting-ikea-aqi-sensor/tasmota-pin-mapping.png)
 
-Once you configure I2C details for the AHT10 sensor, Tasmota will read the sensor as a UV Sensor because of an address conflict, to handle it, you need to tell Tasmota to disable the UV sensor driver & enable the AHTx sensor driver, you can do that by going into the Tasmota Console of the device and running the following commands:
+Once you configure I2C details for the AHT10 sensor, Tasmota will read the sensor as a UV Sensor initially because of an address conflict, to handle it, you need to tell Tasmota to disable the UV sensor driver & enable the AHTx sensor driver, you can do that by going into the Tasmota Console of the device and running the following commands:
 
 ```
 I2CDriver12 0
