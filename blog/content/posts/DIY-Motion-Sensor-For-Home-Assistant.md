@@ -42,7 +42,7 @@ Wiring is pretty straight forward - AHT10 temperature humidity sensor is connect
 
 ![Components](/assets/images/diy-motion-sensor-for-home-assistant/sensor-components.jpg)
 
-All of the above electronics were enclosed in a custom built 3D printed case. You can download the STL files to print here: https://www.thingiverse.com/thing:5868311. 
+All of the above electronics were enclosed in a custom built 3D printed case designed using Fusion 360. You can download the STL files to print here: https://www.thingiverse.com/thing:5868311. 
 
 ![3D printed case](/assets/images/diy-motion-sensor-for-home-assistant/motion_sensor_case_fusion360.jpg)
 
@@ -112,5 +112,8 @@ In addition to this, you'll also be able to use the motion trigger in your autom
 
 ### Conclusion
 The sensor has been working flawlessly since the last few weeks. Must say that I'm pretty impressed by it so far. Will keep this thread updated with long term usage & battery life.
+
+Since there is no battery protection circuitry now, only time will tell how long the battery will
+last, the plan now is to recharge the battery once the sensor stops sending data. Have setup an automation to trigger an alert if the sensor go silent for 2hrs - since the temperature & humidity data is published every 10mins, its easy to detect that the sensor has died.
 
 Thanks for reading!
