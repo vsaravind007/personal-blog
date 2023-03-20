@@ -13,7 +13,7 @@ categories:
 draft: false
 ---
 
-Recent visit to Ikea made me buy a bunch of their cute little things, the Vindriktning was one of them. Its a very simple AQI monitor that measures the PM2.5 particles in the air and shows an LED indicator based on the concentration in µg/m³ it reads.
+Recent visit to Ikea made me buy a bunch of their cute little things, the Vindriktning was one of them. Its a very simple air quality monitor that measures the PM2.5 particles in the air and shows an LED indicator based on the concentration in µg/m³ it reads.
 
 ![Sensor](/assets/images/converting-ikea-aqi-sensor/ikea-Vindriktning.jpg)
 
