@@ -2,10 +2,8 @@
 title: "Building a DIY Smart Home In India Part 1"
 date: 2023-07-07T16:26:13+05:30
 summary: Building a DIY smart home in India is not as easy as getting a bunch of smart plugs & bulbs. This is my journey of converting my "dumb" home to a "smart" home in India using DIY methods using custom built hardware, software & opensource stack.
-cover:
-    image: "/assets/images/long-running-lambda-functions/intro.webp"
 draft: false
-tags: ['backend', 'nodejs', 'aws', 'lambda','cloudwatch']
+tags: ['smarthome', 'tasmota', 'hardware', 'design','diy','homeassistant']
 categories:
 - software
 - aws
