@@ -79,7 +79,7 @@ Circuit was designed using EasyEDA & manufactured using a local PCB manufacturer
 
 **Iteration #1**
 
-This design was a proof of concept, it was built using a perf board and an ESP32 DevKit along with the necessary triac circuit. This PoC was kept running for about 3 months within a wall switch board to test the real world performance. It was connected to 4 loads - 1 fan, 2 lights and a plug point, 4 switches were also connected to the module. Total connected load was around 350W
+This design was a proof of concept, it was built using a perf board and an ESP32 DevKit along with the necessary triac circuit. This PoC was kept running for about 3 months within a wall switch board to test the real world performance. It was connected to 3 loads - 1 fan, 2 lights, 4 switches were also connected to the module. Total connected load was around 350W
 
 ![XControl Iteration 1](/assets/images/building-a-smart-home/iteration_1.jpg)
 
