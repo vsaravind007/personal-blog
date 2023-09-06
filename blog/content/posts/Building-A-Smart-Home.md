@@ -12,11 +12,12 @@ categories:
 
 Building a DIY smart home in India is not as easy as getting a bunch of smart plugs & bulbs. This is blog is a first in the series of my journey to convert my "dumb" home to a "smart" home located in India in true DIY fashion using custom built hardware, software & opensource home automation software.
 
+![Cover Image](/assets/images/building-a-smart-home/home-automation-cover.png)
+
 A smart home lets you automate a lot of things in your house based on "states", these states are derived from sensors or other inputs such as someone being in a room or a door in open state for a while. It also lets you automate things based on time of day.
 
 A smart home is more than a luxury, it frees you up from a lot of repetitive tasks and also improves the peace of mind factor. Being able to control your lights, HVAC & other hosehold systems through your voice / switches or based on rules will open up a lot of possibilties which I never thought about.
 
-![Cover Image](/assets/images/building-a-smart-home/home-automation-cover.png)
 
 ## Introduction / Why DIY
 
@@ -61,6 +62,8 @@ Instead of going with an off the shelf module, I designed my own - main reason b
 Sonoff and Shelly had a few modules that check some of the boxes at the time, but not all. The custom design will provide the flexibilty I need, but since this is a critical piece of equipment, testing & validation is very very important. Its not ideal if the light doesn't work when you want to or the fan keeps on running without a way to turn it off!
 
 ### Design
+
+I've started the work on my Smart Home as soon as we layed the first layer of bricks for my new home. The tests that are mentioned below are done at my parents place where I was living at the time.
 
 Hardware design is hard, playing with mains voltage just adds on to the fun. I decided to go with a solid state relay based load control because clicking relays are not that great - from a maintenance perspective and from an overall experience perspective. Controlloing inductive loads such as fans will wear out the relays quickly due to arcing, a solenoid being in an energized state for a long time is not that great either.
 
