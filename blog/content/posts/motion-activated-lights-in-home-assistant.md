@@ -23,7 +23,7 @@ Though these sensors can technically detect presence, they're tuned to detect mo
 
 ![PIR Sensor](/assets/images/motion-activated-lights/pir_sensor.png)
 
-Zigbee sensors are widely used because of their simplicity, availability and the ease of use with Home Assistant eco system. The one I use in my smart home are SonOff SNZB-03 Zigbee Motion Sensors, this one specifically: https://amzn.to/3GuPwmO
+Zigbee sensors are widely used because of their simplicity, availability and the ease of use with Home Assistant eco system. The one I use in my smart home are SonOff SNZB-03 Zigbee Motion Sensors, this one specifically: https://amzn.to/3GuPwmO. I'm also using a few sensors I've built myself: https://blog.aravindvs.com/posts/diy-motion-sensor-for-home-assistant/
 
 ## When/Where to Use PIR Motion Sensors
 
