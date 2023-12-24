@@ -13,6 +13,10 @@ categories:
 
 Motion activated lights using PIR sensors in home assitant can become frustrating if your automation is relying on motion detected / not detected for controlling the light, if you're using simple PIR motion sensors, chances are that they've a cool off period which isn't very suitable for reliable ON/OFF control. You could end up in sitations where you're still in the area but the sensor turned the light off, you'll have to wave your hands or move a little to turn them light back on.
 
+
+{{< youtube uWmyPp4D9Bg >}}
+The video above shows the setup I've in my kitchen, the sensor is placed in a location that is optimal - no false triggers!
+
 Though it seems quite obvious, the fundamental thing to note here is that a PIR motion sensor is a "Motion" sensor and not a "Presence" sensor. What it means is that, the sensor is capable of detecting motion and motion only - it cannot and will not be able to distinguish between a person who is sitting idle in a chair. 
 
 This is an issue if you want to setup a light automation where you want to keep the lights ON when someone is in a room/area and want to keep it ON as long as they're still there.
