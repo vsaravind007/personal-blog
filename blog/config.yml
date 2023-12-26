@@ -53,7 +53,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Personal Blog | Aravind VS"
+    text: "aravind vs | blog"
     icon: /icon.png
     iconHeight: 35
 
