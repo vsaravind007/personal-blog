@@ -1,7 +1,7 @@
 ---
 title: "The Epidemic Of Short Attention Span"
 date: 2024-12-03T23:00:03+05:30
-summary: Effects that I've seen on individuals around me due to the short attention span that they have now because of shortform videos and availability of capsule sized information
+summary: Effects that I've seen on me and the individuals around me due to the short attention span that they have now because of shortform videos, minimalism and availability of capsule sized information
 cover:
     image: "/assets/images/long-running-lambda-functions/intro.webp"
 draft: false
