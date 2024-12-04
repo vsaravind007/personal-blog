@@ -12,7 +12,9 @@ categories:
 - management
 ---
 
-It appears that people with smartphone access are currently experiencing a condition characterized by a brief attention span. Evidently, people nowadays seem to possess a shorter attention span than a goldfish, lasting only 9 seconds(source: https://standard.asl.org/27705/uncategorized/social-media-causes-attention-spans-to-drop/) and nobody saw this coming, quickly catalysed by the COVID lockdowns, looks like the issues are multifold at this point in time. This is actually concerning at multiple levels and this post is about a few observations I've personally made about myself, people I work with and people I see all around on a daily basis.
+Evidently, people nowadays seem to possess a shorter attention span than a goldfish, lasting only 9 seconds, read more here: https://standard.asl.org/27705/uncategorized/social-media-causes-attention-spans-to-drop/ and nobody saw this coming, quickly catalysed by the COVID lockdowns, looks like the issues are multifold at this point.
+
+And here's the kicker - this isn't just some random fun fact. Since COVID lockdowns hit, our attention spans have taken an absolute nosedive, and nobody really saw it coming. I've been watching this play out like a slow-motion train wreck, both in my own behavior (yeah, I'm guilty too) and in everyone around me - from  colleagues who can't sit through a meeting without checking their phones, to random strangers who bump into each other because they're glued to their screens to drivers forgetting their lane & wandering off!
 
 **Pre-COVID Situation**
 
