@@ -22,9 +22,9 @@ Even before COVID, people's attention span was going down, this is(was) fully bl
 
 ![](/assets/images/Short-Attention-Span-And-Work/loop.png "Loop")
 
-Every company and brand is now running behind minimalism to a a point of extreme, though it is a nice concept & saves a lot of time(most of the time), side effects are multi fold. 
+Every company and brand is now running behind minimalism to a point of extreme, though it is a nice concept & saves a lot of time(most of the time), side effects are multi fold. 
 
-Because of the influence it has on you from every day objects like mobile phones and apps, you start expecting miminalism in things where you're not supposed to look for minimalism, from microwave ovens to washing machines, you might often think why is this complex to a point where the same thought creeps into every single aspect of your life.
+Because of the influence it has on you from every day objects like mobile phones and apps, you start expecting mininalism in things where you're not supposed to look for minimalism, from microwave ovens to washing machines, you might often think why is this complex to a point where the same thought creeps into every single aspect of your life.
 
 **Minimalism ?**
 
