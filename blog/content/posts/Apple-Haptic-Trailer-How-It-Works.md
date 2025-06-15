@@ -92,7 +92,7 @@ Extracting audio from video is as trival as running a simple one liner ffmpeg co
 The following video helps visualise how an audio clip can be represented visually, if we just convert the spikes to transient haptic events and the constant audio part to a continous haptic event, it would still become a crude haptic sequence that will match the audio clip.
 
 
-{{< video src="/assets/videos/haptic-video/audio-spectrum.mp4" type="video/mp4" loop="false">}}
+{{< youtube lfpqh5Q-I8g >}}
 
 ### Audio Feature Extraction 
 We cannot convert all audio features to haptics, that would mean every cough, every scream and every cry would be converted to a haptic sequence, which would definitely won't feel natural nor pleasant. With the (limited)research along with some trial & error I've done so far, the audio feature extraction should look for the following for a natural & smooth experience:
