@@ -1,13 +1,14 @@
 ---
 title: "Feel What You Hear: The Magic Behind Apple's Haptic Trailer & Recreating It"
-date: 2025-06-07T16:26:13+05:30
-summary: Building a DIY smart home in India is not as easy as getting a bunch of smart plugs & bulbs. This is my journey of converting my "dumb" home to a "smart" home in India using DIY methods using custom built hardware, software & opensource stack.
-tags: ['video engineering', 'innovation', 'apple']
+date: 2025-06-16T00:26:13+05:30
+summary: Exploration of the technology and engineering behind Apple's new Haptic Trailer
+tags: ['video engineering', 'innovation', 'apple', 'swift']
 categories:
 - software
 - video engineering
 - architecture
 - innovation
+- swift
 ---
 
 Apple recently released a new promotional trailer of their upcoming F1 movie, they're calling it the "Haptic Trailer". As the name suggest, the trailer incorporates Haptic feedback based on the scene and sounds. It is a novel experiment on user engagement when it comes to video consumption. Haptic feedback isn't a new concept in the world of entertainment, gaming console contollers like Sony DualShock and XBox Controllers have been rocking these since the last few decades. 
