@@ -11,11 +11,11 @@ categories:
 - swift
 ---
 
-Apple recently released a new promotional trailer of their upcoming F1 movie, they're calling it the "Haptic Trailer". As the name suggest, the trailer incorporates Haptic feedback based on the scene and sounds. It is a novel experiment on user engagement when it comes to video consumption. Haptic feedback isn't a new concept in the world of entertainment, gaming console contollers like Sony DualShock and XBox Controllers have been rocking these since the last few decades. 
+Apple recently released a new promotional trailer of their upcoming F1 movie, they're calling it the "Haptic Trailer". As the name suggests, the trailer incorporates Haptic feedback based on the scene and sounds. It is a novel experiment on user engagement when it comes to video consumption. Haptic feedback isn't a new concept in the world of entertainment, gaming console controllers like Sony DualShock and XBox Controllers have been rocking these since the last few decades. 
 
 ![Cover Image](/assets/images/haptic-video/haptic-video-cover.jpg)
 
-There have been such experiements related to video in the past but Apple's newest implementation is surely going to be a taken a storm, Apple simply outshines the competition with their "ecosystem" and if anyone can make this concept popular, its going to be Apple!
+There have been such experiments related to video in the past but Apple's newest implementation is surely going to be a taken a storm, Apple simply outshines the competition with their "ecosystem" and if anyone can make this concept popular, its going to be Apple!
 
 ## What Is It?
 
@@ -23,7 +23,7 @@ If you have an iOS device, you can watch it [here](https://tv.apple.com/us/clip/
 
 ## How Does It Work?
 
-Like every sensible engineer, I wanted to see how this was pulled off, I immediately started poking around the network calls by loading the trailer in a Safari window. Since I work with video manifest files for a living, I could easily recognize differences without much effrot. The m3u8 master manifest for this trailer looked really interesting!
+Like every sensible engineer, I wanted to see how this was pulled off, I immediately started poking around the network calls by loading the trailer in a Safari window. Since I work with video manifest files for a living, I could easily recognize differences without much effort. The m3u8 master manifest for this trailer looked really interesting!
 
 In addion to the usual ABR ladder details, audio tracks and subtitle info, there is an additional`EXT-X-SESSION-DATA`with`DATA-ID`set to`com.apple.hls.haptics.url` and`VALUE` set to an "ahap" file url, this is the what makes it tick!
 
@@ -33,19 +33,19 @@ The tag `EXT-X-SESSION-DATA` allows arbitrary session data to be carried in a Ma
 
 ### Apple Magic!
 
-Since iOS 13.0+ and iPadOS 13.0+, Apple has included *Core Haptics* capability which lets the developer add custom haptic feedbacks to their apps to have a bit more physical engagement with on screen interactions. You might be already familiar with some of the input controls having haptic feedback when you interact with them - the alarm time picker for example. You can read Apple's documentation on Core Haptics [here](https://developer.apple.com/documentation/corehaptics).
+Since iOS 13.0+ and iPadOS 13.0+, Apple has included *Core Haptics* capability which lets the developer add custom haptic feedback to their apps to have a bit more physical engagement with on screen interactions. You might be already familiar with some of the input controls having haptic feedback when you interact with them - the alarm time picker for example. You can read Apple's documentation on Core Haptics [here](https://developer.apple.com/documentation/corehaptics).
 
-The Taptic Engine built into iPhones and iPads (and other wearables) are in a way high definition, you can differentiate between a mild tap, a sharp tap and even a continous rumble, I am yet to find a mobile device with this level of resolution and definition when it comes to haptic feedback.
+The Taptic Engine built into iPhones and iPads (and other wearables) are in a way high definition, you can differentiate between a mild tap, a sharp tap and even a continuous rumble, I am yet to find a mobile device with this level of resolution and definition when it comes to haptic feedback.
 
 ![Apple Taptic Engine](/assets/images/haptic-video/taptic-engine.png)
 
-What makes Core Haptics interesting is the ability to play a continous sequence of patterns - once again thanks to Apple's Hardware + Software integration harmony! 
+What makes Core Haptics interesting is the ability to play a continuous sequence of patterns - once again thanks to Apple's Hardware + Software integration harmony! 
 
-From an implementation perspective, every haptic feedback event is an object of`CHHapticEvent`from the Core Haptics library, which essentially is a simple way to represent one haptic event, there are audio and haptic feedbacks, lets ignore audio for now.
+From an implementation perspective, every haptic feedback event is an object of`CHHapticEvent`from the Core Haptics library, which essentially is a simple way to represent one haptic event, there are audio and haptic feedback, lets ignore audio for now.
 
-When it comes to haptics, there are 2 main event types based on the duration of the effect - **transient** & **continous**.
+When it comes to haptics, there are 2 main event types based on the duration of the effect - **transient** & **continuous**.
 
-Transient events are impulses while continous ones represent vibrations or rumble.
+Transient events are impulses while continuous ones represent vibrations or rumble.
 
 The image below shows how these events are represented against time:
 
@@ -75,7 +75,7 @@ Apple has a specification for these files - Apple Haptic Audio Pattern (AHAP) fi
 
 ## Generating Haptics (AHAP File Generation)
 
-An audio clip is essentially a continous analog signal, the differences in frequency & amplitude of the signal is what we perceive as sound, speakers are essentially motors that convert electrical energy to sound waves through electromagnetic effect. The vibrations from a speaker cone is what we hear as sound.
+An audio clip is essentially a continuous analog signal, the differences in frequency & amplitude of the signal is what we perceive as sound, speakers are essentially motors that convert electrical energy to sound waves through electromagnetic effect. The vibrations from a speaker cone is what we hear as sound.
 
 If you connect a powerful enough amplifier to an electric motor, you can actually hear the music play because a motor is essentially a coil sitting in a magnetic field just like a speaker.
 
@@ -87,9 +87,9 @@ Keeping this in mind, on a high level - just feeding the audio signal to some ki
 
 ![Haptic File Generation](/assets/images/haptic-video/haptic-generation-workflow.png)
 
-Extracting audio from video is as trival as running a simple one liner ffmpeg command, but analysing the audio & feature extraction the challenging part. Creating the haptic sequence comes next but its realitively easy because you can play with numbers.
+Extracting audio from video is as trivial as running a simple one liner ffmpeg command, but analysing the audio & feature extraction the challenging part. Creating the haptic sequence comes next but its relatively easy because you can play with numbers.
 
-The following video helps visualise how an audio clip can be represented visually, if we just convert the spikes to transient haptic events and the constant audio part to a continous haptic event, it would still become a crude haptic sequence that will match the audio clip.
+The following video helps visualise how an audio clip can be represented visually, if we just convert the spikes to transient haptic events and the constant audio part to a continuous haptic event, it would still become a crude haptic sequence that will match the audio clip.
 
 
 {{< youtube lfpqh5Q-I8g >}}
@@ -109,7 +109,7 @@ Once this is extraction part is done, separate out the components of the audio c
 3. Bass
 4. Treble
 
-Once we have these split out and available, its just a matter of converting these to corresponding continous haptic events:
+Once we have these split out and available, its just a matter of converting these to corresponding continuous haptic events:
 
 Generate `HapticTransient` events from onsets & beats  
 Generate `HapticContinuous` events from the sustained energy + harmonics
@@ -125,7 +125,6 @@ You can download the full AHAP file from [here](/assets/others/haptic-video/tear
 {{< youtube R6MlUcmOul8 >}}
 
 ### Making It Play!
-
 
 
 There are a few ways to do this, what Apple has done with their original implementation is to include the AHAP file in the mainfest file itself as a `EXT-X-SESSION-DATA` tag. However, what I have done is to load the AHAP file simliar to a sidecar subtitle and timesync the video & haptic playback timelines.
@@ -203,6 +202,6 @@ Even though the technology is cool, it has a few issues related to user experien
 
 Its Apple devices only (for now)!
 
-Its only suitable for short videos like trailers and teasers, it won't make much sense for longer vidoes. 
+Its only suitable for short videos like trailers and teasers, it won't make much sense for longer videos. 
 
 Generation of AHAP files is another challenge, I'm currently working on a tool that will generate AHAP files from audio files, I will be updating this blog with the tool once ready and available for public use.
