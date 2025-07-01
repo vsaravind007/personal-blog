@@ -65,6 +65,8 @@ Both intensity and sharpness are values between 0.0 and 1.0
 
 ![CHHapticEvent Sharpness](/assets/images/haptic-video/haptic-sharpness.png)
 
+(All 3 images were shamelessly stolen from Apple's documentation!😶‍🌫️)
+
 Also there are a few other parameters associated with Haptics, however for the sake of brevity we can ignore them for now. In case you're interested, you can read more [here](https://developer.apple.com/documentation/corehaptics/chhapticevent/parameterid#topics)
 
 Now the engineering masterpiece - Core Haptics allows the developer to create a list of haptic events and play them back like an audio/video file!
