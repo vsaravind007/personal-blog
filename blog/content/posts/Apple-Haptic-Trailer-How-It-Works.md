@@ -25,7 +25,7 @@ If you have an iOS device, you can watch it [here](https://tv.apple.com/us/clip/
 
 Like every sensible engineer, I wanted to see how this was pulled off, I immediately started poking around the network calls by loading the trailer in a Safari window. Since I work with video manifest files for a living, I could easily recognize differences without much effort. The m3u8 master manifest for this trailer looked really interesting!
 
-In addion to the usual ABR ladder details, audio tracks and subtitle info, there is an additional`EXT-X-SESSION-DATA`with`DATA-ID`set to`com.apple.hls.haptics.url` and`VALUE` set to an "ahap" file url, this is the what makes it tick!
+In addition to the usual ABR ladder details, audio tracks and subtitle info, there is an additional`EXT-X-SESSION-DATA`with`DATA-ID`set to`com.apple.hls.haptics.url` and`VALUE` set to an "ahap" file url, this is the what makes it tick!
 
 ![Apple Manifest With AHAP File](/assets/images/haptic-video/manifest-extract.png)
 
