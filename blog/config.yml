@@ -17,6 +17,11 @@ minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+
 security:
   enableInlineShortcodes: true
 
