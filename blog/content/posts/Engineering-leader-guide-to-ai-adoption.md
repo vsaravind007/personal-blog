@@ -12,7 +12,7 @@ categories:
 - leadership
 ---
 
-![Logs](/assets/images/engineering-leaders-guide-to-ai-adoption/cover.jpg "Logs")
+![Logs](/assets/images/engineering-leaders-guide-to-ai-adoption/cover.jpg "Engineering Leader's Guide to AI Adoption")
 
 Everyone wants to say “AI” in their marketing material now, suddenly every company is “AI powered” and we are at a point where people take notice if they don’t see “AI” in a product or even service offering. Whether you are on the side that believes AI is a bubble or on the side that thinks AI is the best thing since the internet, AI & AI assissted engineering are here to stay.
 
