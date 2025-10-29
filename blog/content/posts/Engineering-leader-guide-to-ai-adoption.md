@@ -24,7 +24,7 @@ If you are an engineering leader trying to navigate the AI implementation maze a
 2. Pilot
 3. Rollout
 
-Before going through these pointers, understand the core of it all: 
+Before going through these pointers, understand the core first: 
 
 >AI is not a magic bullet, nor it can magically replace your engineers overnight, but its a tool. A tool powerful enough to help developers with right skills to elevate themselves, QA engineers to go beyond conventional methods and PMs to get better at what they do. AI can help positively, *ONLY* if your foundation is strong, otherwise your AI adoption story will look like one of those Lovable disasters, maybe at different scale!
 
@@ -76,4 +76,4 @@ Once you have the policies and tools ready, you can update your developer workfl
 Once AI is in your developer workflow, you should be able to clearly differentiate between "Before AI" and "After AI" through numbers and metrics. You should also revise your the performance KPIs accordingly to include the AI assistance. The idea is that you should be able to offset the CapEx on AI tools and initiatives through developer productivity or faster turn around times.
 
 ## Closing Thoughts
-Personally, being part of a few AI adoption initiatives and using AI assistance in my own development workflow, I can clearly see the way forward. Whether you are in the hype train, or in denial, AI tools and AI assisted tools are here to stay. All of the major players - Meta, Google, OpenAI, Alibaba and Anthropic are now focusing on smaller, less resource intensive LLMs which means AI tools are going to be there everywhere, developing AI assisted workflows as a tool is already a skill, expect it to be an expectation!
+Personally, being part of a few AI adoption initiatives at SME scale and using AI assistance in my own development workflows, the points above oftem present themselves in different forms, having concrete plans and answers around these defines your success rate. Whether you are in the hype train, or in denial, AI tools and AI assisted tools are here to stay. All of the major players - Meta, Google, OpenAI, Alibaba and Anthropic are now focusing on smaller, less resource intensive LLMs which means AI tools are going to be there everywhere, AI assisted workflows are already becoming common, expect it to be an expectation!
