@@ -2,7 +2,7 @@
 title: "Engineering Leader's Guide to AI Adoption"
 date: 2025-10-28T23:48:59+05:30
 draft: false
-summary: A simple how-to guide on implenting AI driven development within high performing teams
+summary: A starter guide on adopting AI driven development pratices within high performing engineering teams
 cover:
     image: "/assets/images/engineering-leaders-guide-to-ai-adoption/cover.jpg"
 tags: ['thoughts', 'leadership', 'technology', 'ai','cloudwatch']
