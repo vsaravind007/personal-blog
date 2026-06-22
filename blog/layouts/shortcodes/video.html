@@ -22,7 +22,7 @@
 <figure>
 {{- end -}}
   <video preload="{{ $preload }}"
-    width="720"
+    style="object-fit: contain;position: absolute; width:100%" 
     {{- if $controls }} controls{{ end -}}
     {{- if $muted }} muted{{ end -}}
     {{- if $loop }} loop{{ end -}}

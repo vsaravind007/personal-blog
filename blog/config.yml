@@ -30,7 +30,9 @@ params:
   title: Aravind VS
   description: "Personal blog of Aravind VS"
   keywords: [Blog, Portfolio, aravind,engineering]
-  author: Aravind
+  author:
+    name: Aravind
+    email: mail@aravindvs.com
   images: ["https://blog.aravindvs.com/assets/images/cover.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: light # dark, light
