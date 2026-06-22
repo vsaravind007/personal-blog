@@ -3,4 +3,4 @@ base="blog"
 publish="/public"
 
 [build.environment]
-  HUGO_VERSION = "0.155.0"  # <-- set this to the hugo version you use locally
+  HUGO_VERSION = "0.163.3"  # <-- set this to the hugo version you use locally
