@@ -1,3 +1,6 @@
 [build]
 base="blog" 
 publish="/public"
+
+[build.environment]
+  HUGO_VERSION = "0.161.1"  # <-- set this to the hugo version you use locally
