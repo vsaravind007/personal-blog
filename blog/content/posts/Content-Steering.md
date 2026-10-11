@@ -1,6 +1,6 @@
 ---
 title: "Content Steering: Solving Multi-CDN Complexity in Modern Video Delivery"
-date: 2026-10-05T23:48:59+05:30
+date: 2026-10-11T13:48:59+05:30
 draft: false
 summary: What is content steering and how it will help solve the multi-CDN complexities in modern media delivery at scale
 cover:
@@ -71,11 +71,13 @@ Content Steering is useful because the the ability to control when and where to 
 
 ![Content Steering](/assets/images/content-steering/steering.png "Content Steering")
 
-This a technique introduced by Apple as part of their HLS spec in 2021 and is fully supported by the Apple ecosystem. It is a fairly new concept, however the DASH Industry Forum has adopted the specification and is now part of MPEG-DASH implementation. All modern browsers and devices supporting DASH has built in support for content steering. Its one of those less used tech that is already existing.
+This a technique introduced by Apple as part of their HLS spec in 2021 and is fully supported by the Apple ecosystem. It is a fairly new concept, however the DASH Industry Forum has adopted the specification and is now part of MPEG-DASH implementation. In short, all modern browsers and devices supporting HLS & DASH has built in support for content steering, interestingly making it one of those less used tech that is already existing.
 
-### How?
+### How Does It Work ?
 
 Content Steering is surprisingly simple from a technical perspective, only additional component to a traditional Multi CDN system is an orchestration server called the "Steering Server". When playback is requested, player instances will receive the initial playback URL as usual along with the content steering server and a TTL. The player instances will start the playback normally while pinging the content server at the specified refresh intervals.
+
+![Content Steering](/assets/images/content-steering/content_steering-request-flow.png "Content Steering Request Flow")
 
 The steering server may direct the player to use a different CDN than the one it is currently using and the player will automatically switch over to the new CDN when it is instructed to. The logic and rules that drive where the player should fetch video chunks from can get complex and dynamic.
 
@@ -97,6 +99,23 @@ In case `CDN_Y` is to be given first priority, the server would respond with the
 ```
 
 The field `TTL` defines the interval at which the player should check for steering updates.
+
+### Bad Parts ?
+
+Content Steering does come with its own set of unique challenges and some that are very familiar in the OTT world, below are some of them that I think are worth evaluating before even thinking about a shift:
+
+##### Spec Fragmentation
+HLS & DASH are fundamentally different specifications though they are solving the same set of problems, Content Steering spec for both are also fragmented meaning the implementation & integrations teams will have another set of problems to maintain!
+
+#### Observability nuances
+Though the idea seems simple, the complexity around observability becomes more. An example would be the lack of metrics from an unhealthy CDN, the moment Steering Server detects elevated failures, it may deicde to move all users to the healthy one forcing the unhealthy CDN to sit idle and generate no metrics. In case more metrics are needed, sacrificial users are needed which adds on to the complexity. Problem becomes "How do you define hard failure & a service degradation" and solutions around it.
+
+#### More Client Side Requests
+Players would periodically poll the Steering Server for CDN updates, which adds on to the request budget generated from the client side. This also means that the Steering Server has to be built for scale, especially on high traffic services that do sports streaming.
+
+#### Elephant In The Room - The Steering Server!
+Adding another architecture component to an already complex distributed system comes with its own challenges and maintenance overhead. Someone has to maintain, someone has to respond to issues and there has to be someone owning and looking at the glass to make sure everything works. Though smart implementations can elimiate single point of failures, the Steering Server becomes a critical piece within the architecture that needs to be designed for scale and maintained for reliability.
+
 
 ### Closing Thoughts
 
