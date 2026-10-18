@@ -55,7 +55,7 @@ Most commonly implemented approach is the assignment by the backend:
 5. In case there is an issue with the primary CDN, player may choose the secondary/fallback CDN for better a UX
 
 
-In hindsight, this looks like a perfect solution, until it isn't! What happens if the CDN fails midway through the stream(think live sports), what happens if the network conditions change and the user is closer to a different CDN POP or maybe a complicated use-case - how do I optmise selecting a CDN that is cheaper after a certain time without disconnecting the users who are already streaming?
+In hindsight, this looks like a perfect solution, until it isn't! What happens if the CDN fails midway through the stream(think live sports), what happens if the network conditions change and the user is closer to a different CDN than the one initially connected to or maybe a complicated use-case - how do I optmise selecting a CDN that is cheaper after a certain time without disconnecting the users who are already streaming?
 
 ### Enter Content Steering!
 
@@ -104,7 +104,7 @@ The field `TTL` defines the interval at which the player should check for steeri
 
 Content Steering does come with its own set of unique challenges and some that are very familiar in the OTT world, below are some of them that I think are worth evaluating before even thinking about a shift:
 
-##### Spec Fragmentation
+#### Spec Fragmentation
 HLS & DASH are fundamentally different specifications though they are solving the same set of problems, Content Steering spec for both are also fragmented meaning the implementation & integrations teams will have another set of problems to maintain!
 
 #### Observability nuances
